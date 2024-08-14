@@ -26,7 +26,6 @@ app.use(express.static("dist"));
 const GEONAMES_USERNAME = process.env.GEONAMES_USERNAME;
 const WEATHERBIT_API_KEY = process.env.WEATHERBIT_API_KEY;
 const PIXABAY_API_KEY = process.env.PIXABAY_API_KEY;
-console.log(GEONAMES_USERNAME, WEATHERBIT_API_KEY, PIXABAY_API_KEY);
 // Start the server and listen on port 8081
 app.listen(port, () => {
   console.log("Server is running on localhost:" + port);
@@ -78,7 +77,7 @@ app.post("/travelData", async (req, res) => {
 
     res.send(travelData);
   } catch (error) {
-    console.error("Error:", error);
+    alert("Error:", error);
     res.status(500).send({
       message: "Error retrieving travel data",
       error: error.message,

@@ -4,7 +4,7 @@
   "description": "## Overview This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node src/server/index.js",
     "build-prod": "webpack --config webpack.prod.js",
     "build-dev": "webpack-dev-server  --config webpack.dev.js --open"
@@ -25,10 +25,12 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.0",
+    "jest": "^29.7.0",
     "mini-css-extract-plugin": "^2.9.0",
     "node-sass": "^9.0.0",
     "sass-loader": "^16.0.0",
     "style-loader": "^4.0.0",
+    "supertest": "^7.0.0",
     "webpack-dev-server": "^5.0.4",
     "workbox-webpack-plugin": "^7.1.0"
   }

@@ -22,7 +22,7 @@ This is a simple Travel App that allows users to get weather forecasts and image
   - Workbox for service worker integration
 
 ## Setup Instructions
-
+-node :v20.12.1
 ### Prerequisites
 
 - Node.js installed on your machine.
